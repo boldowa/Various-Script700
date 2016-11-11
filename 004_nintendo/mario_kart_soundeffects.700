@@ -1,0 +1,35 @@
+;
+; mario kart script
+;
+
+
+	w	2097152		; ‚P•b‘Ò‹@
+
+	m	#0x01	w1	; –Â‚ç‚·Œø‰Ê‰¹”Ô†
+	m   #0 w0
+:1
+	bra	97
+	c	#0xff	w1
+	beq	99
+	a	#1	w1
+	w	524288     ; 0.25•b‚ÅŸ‚ÌŒø‰Ê‰¹
+	bra	1
+
+
+:97
+	r0
+	m	w1	1
+	m   w1  w3
+:98
+	w	16
+	c	w1	1
+	bne	1
+	m	#0x00	1
+	r
+
+; end script
+:99
+	e
+::
+
+	e
